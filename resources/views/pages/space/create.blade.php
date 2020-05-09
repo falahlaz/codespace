@@ -12,7 +12,7 @@
                     {!! Form::open(['route' => 'space.store', 'method' => 'post', 'files' => true]) !!}
                         <div class="form-group">
                             <label for="">Title</label>
-                            {!! Form::text('title', null, ['class' => $errros->has('title') ? 'form-control is-invalid' : 'form-control' ]) !!}
+                            {!! Form::text('title', null, ['class' => $errors->has('title') ? 'form-control is-invalid' : 'form-control' ]) !!}
                             @error('title')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -22,7 +22,7 @@
                         <div class="form-group">
                             <label for="">Address</label>
                             {!! Form::textarea('address', null, [
-                                'class' => $errros->has('address') ? 'form-control is-invalid' : 'form-control',
+                                'class' => $errors->has('address') ? 'form-control is-invalid' : 'form-control',
                                 'cols' => "10",
                                 'rows' => "3"
                             ]) !!}
@@ -35,7 +35,7 @@
                         <div class="form-group">
                             <label for="">Description</label>
                             {!! Form::textarea('description', null, [
-                                'class' => $errros->has('description') ? 'form-control is-invalid' : 'form-control',
+                                'class' => $errors->has('description') ? 'form-control is-invalid' : 'form-control',
                                 'cols' => "10",
                                 'rows' => "3"
                             ]) !!}
@@ -51,7 +51,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Latitude</label>
-                            {!! Form::text('latitude', null, ['class' => $errros->has('latitude') ? 'form-control is-invalid' : 'form-control' ]) !!}
+                            {!! Form::text('latitude', null, ['class' => $errors->has('latitude') ? 'form-control is-invalid' : 'form-control' ]) !!}
                             @error('latitude')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Longitude</label>
-                            {!! Form::text('longitude', null, ['class' => $errros->has('longitude') ? 'form-control is-invalid' : 'form-control' ]) !!}
+                            {!! Form::text('longitude', null, ['class' => $errors->has('longitude') ? 'form-control is-invalid' : 'form-control' ]) !!}
                             @error('longitude')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
