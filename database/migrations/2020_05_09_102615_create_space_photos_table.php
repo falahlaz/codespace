@@ -19,7 +19,7 @@ class CreateSpacePhotosTable extends Migration
             $table->string('path');
             $table->timestamps();
 
-            $table->foreign('space_id')->references('id')->on('space')->onDelete('cascade');
+            $table->foreign('space_id')->references('id')->on('spaces')->onDelete('cascade');
         });
     }
 
