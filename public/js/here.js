@@ -146,6 +146,11 @@ if (navigator.geolocation) {
             init(objLocalCoord.lat, objLocalCoord.lng, 40)
         }
     })
+
+    // Open Direction Function
+    function openDirection(lat, lng, id) {
+        window.open(`/space/${id}?from=${objLocalCoord.latitude},${objLocalCoord.longitude}&to=${lat},${lng}`, "_self");
+    }
 } else {
     console.error("Goelocation is not supported by this browser!");
 }
